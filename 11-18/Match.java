@@ -22,7 +22,7 @@ public class Match {
         // 小写字母 -10
         if (c >= 'a' && c <= 'z') {
             if ( (char)(c - 10)<'a' ) {
-                c = (char) (10 - c - 'a');
+                 c = (char) ('z'-(10 - (c-'a'))+1);
                 System.out.println(c);
                 return c;
             }
